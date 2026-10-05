@@ -1,109 +1,34 @@
+# AWS Terraform & Ansible Project
 
-# AWS Infrastructure Automation with Terraform and Ansible
+## Overview
+AWS infrastructure automation project using Terraform and Ansible.
 
-## Project Overview
+Terraform is used to create the VPC, subnet, security group and EC2 instance.
+Ansible is used to configure the EC2 server and deploy Nginx.
 
-This project demonstrates AWS infrastructure automation using Terraform
-and server configuration using Ansible.
-
-Terraform is used to provision the AWS networking infrastructure and EC2
-instance, while Ansible is used to configure the EC2 server and deploy
-Nginx.
-
-## Architecture
-
-Internet
-   |
-Internet Gateway
-   |
-AWS VPC
-   |
-Public Subnet
-   |
-Security Group
-   |
-EC2 Instance
-   |
-Ansible
-   |
-Nginx Web Server
-
-## Technologies Used
-
+## Technologies
 - AWS
 - Terraform
 - Ansible
 - EC2
 - VPC
-- Subnet
-- Internet Gateway
-- Route Table
-- Security Groups
 - Nginx
 - Ubuntu Linux
 
-## Infrastructure Created
-
-- Custom AWS VPC
-- Public Subnet
-- Internet Gateway
-- Public Route Table
-- Route Table Association
-- Security Group
-- EC2 Instance
-
-## Terraform
-
-Terraform was used to automate AWS infrastructure creation.
-
-Main Terraform components:
-
-- VPC
-- Subnet
-- Internet Gateway
-- Route Table
-- Security Group
-- EC2
-- Reusable EC2 Module
-
-## Ansible
-
-Ansible was used for server configuration.
-
-The Ansible playbook:
-
-1. Connects to the Terraform-created EC2 instance
-2. Installs Nginx
-3. Starts and enables Nginx
-4. Creates a custom HTML page
+## Workflow
+1. Create AWS infrastructure using Terraform
+2. Provision EC2 inside a custom VPC
+3. Connect to EC2 using Ansible
+4. Install and configure Nginx
+5. Deploy a custom web page
 
 ## Final Output
-
-The deployed website displays:
-
-"Hello from Terraform and Ansible"
-
-This confirms successful infrastructure provisioning and configuration.
-
-## Project Workflow
-
-1. Created AWS infrastructure using Terraform
-2. Created custom VPC and networking components
-3. Provisioned EC2 inside the VPC
-4. Retrieved EC2 public IP using Terraform output
-5. Configured Ansible inventory
-6. Tested connectivity using Ansible ping
-7. Installed and configured Nginx using Ansible
-8. Verified the application through the EC2 public IP
+*Hello from Terraform and Ansible*
 
 ## What I Learned
-
 - AWS VPC networking
-- Infrastructure as Code using Terraform
+- Terraform Infrastructure as Code
 - Terraform modules
-- EC2 provisioning
-- Ansible inventory management
 - Ansible playbooks
 - Linux server configuration
 - Nginx deployment
-- Terraform and Ansible integration
