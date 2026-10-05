@@ -1,0 +1,44 @@
+# AWS Infrastructure Automation with Terraform & Ansible
+
+## Project Overview
+
+This project demonstrates AWS infrastructure automation using Terraform and Ansible.
+
+Terraform is used to create the AWS VPC, subnet, security group, and EC2 instance. Ansible is used to configure the EC2 server and deploy Nginx.
+
+## Technologies Used
+
+- AWS
+- Terraform
+- Ansible
+- EC2
+- VPC
+- Ubuntu Linux
+- Nginx
+- Git & GitHub
+
+## Architecture
+
+Terraform → VPC → Subnet → Security Group → EC2 → Ansible → Nginx → Web Application
+
+## Project Workflow
+
+1. Created AWS infrastructure using Terraform
+2. Created custom VPC and networking components
+3. Provisioned EC2 instance
+4. Connected to EC2 using Ansible
+5. Installed and configured Nginx
+6. Deployed a custom web page
+
+## Final Output
+
+*Hello from Terraform and Ansible*
+
+## What I Learned
+
+- AWS VPC networking
+- Infrastructure as Code with Terraform
+- Terraform modules
+- Ansible automation
+- Linux server configuration
+- Nginx deployment
